@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+
+body{
+    font-family: 'Shadows Into Light', cursive;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+li{
+    list-style: none;
+}
+
+/* predifined classes---- */
+
+.container{
+    margin: 2rem 12rem;
+
+}
+
+.mybtn{
+    font-size: 1rem;
+    padding: 1rem 2rem;
+    border: 0.5px solid black;
+}
+.mybtn1{
+    font-size: 1rem;
+    padding: 1rem 2rem;
+    border: 0.5px solid black; 
+    background-color: #f09627;
+}
+.mybtn1:hover{
+    color: white;
+    
+    box-shadow: none;
+    transition: all 0.3s ease;
+}
+
+.mybtn:hover{
+    color: white;
+    background-color: #f09627;
+    box-shadow: none;
+    transition: all 0.3s ease;
+}
+.d-flex{
+    display: flex;
+}
+/* navbar starts-----
+    -------------------------------- */
+.logo{
+    align-items: center;
+    width: 10rem;
+    display: flex;
+    gap: 2rem;
+}
+nav{
+    margin: 0 10rem;
+    padding: 2rem;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar__list{
+    display: flex;
+    gap: 3rem;
+}
+.navbar__list li{
+    font-size: 1.2rem;
+    cursor: pointer;
+    font-weight: bold;
+}
+.navbar__list li:hover{
+    color: #f09627;
+}
+.navbar-button{
+    width: 100%;
+}
+/* navbar endss-----
+    -------------------------------- */
+
+.hero__container-heading h1{
+    line-height: 4rem;
+}
+    
+.hero__contianer-right-flex{
+    display: flex;
+    gap: 1rem;
+}
+.hero__container_right-line p{
+    font-size: 1.2rem;
+}
+.hero__container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero__container-left h1{
+    font-size: 3.5rem;
+
+}
+
+.hero__container_left-button{
+    margin-top: 2rem;
+}
+.hero__container_right-images{
+    position: relative;
+}
+.right__image-pattern{
+    position: absolute;
+    z-index: 9;
+}
+.right__image-pattern img{
+    height: 21rem;
+    width: 20rem;
+}
+
+.right__image-bg img{
+    height: 21rem;
+    width: 20rem;
+}
+.right__image-main-image{
+    position: absolute;
+    
+}
+
+.right__image-main-image img{
+    margin: 0 3rem;
+    height: 20rem;
+    width: 14rem;
+}
+
+.curve-arrow{
+    margin: 4rem 2rem;
+    
+}
+.vl {
+    border-left: 2px solid #f09627;
+    height: 52px;
+}
+
+.footer{
+    background-color: #242544;
+    width: 100%;
+}
+
+.footer__container-secondPart-icon img{
+    
+    background-color: #68956d;
+    padding: 10px 10px;
+    border-radius: 10px;
+}
+
+.footer__container-thirdPart-icon img{
+    background-color: #f09627;
+    padding: 10px 13px;
+    border-radius: 10px;
+}
+.footer__container-fourthPart-icon img{
+    background-color: #5b83d4;
+    padding: 10px 10px;
+    border-radius: 10px;
+}
+
+
+.footer__container{
+    padding: 3rem 0;
+    gap: 3rem;
+    margin: 0 12rem;
+}
+
+.footer__container h1{
+    text-transform: uppercase;
+    color: #ffffff;
+}
+.footer__container p{
+    
+    color: #ffffff;
+}
+/* .footer__container-heading-para p{
+    white-space: nowrap;
+    width: 50px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+} */
+
+
+/* mobile responsive starts... */
+
+@media screen and (min-width: 992px) {
+    
+    .navbar__userImage img{
+      display: none;  
+    }
+    .navbar-menuBar img{
+        display: none;
+    }
+}
+@media screen and (max-width: 992px){
+    html{
+        font-size: 62.5%;
+        text-align: center;
+        align-items: center;
+        margin: 0 -7rem;
+    }
+    .navbar__button{
+        display: none;
+        
+    }
+    
+    .navbar__list{
+        display: none;
+    }
+
+
+}
+
+@media screen and (max-width: 770px){
+    .hero__container{
+        display: grid;
+        grid-template-columns: repeat(1fr);
+    }
+    .button-arrow-flex{
+        display: grid;
+    }
+    .footer__container{
+        display: grid;
+    }
+}
+
+
+
+
