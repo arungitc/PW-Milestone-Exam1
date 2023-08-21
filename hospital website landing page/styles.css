@@ -1,0 +1,389 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500&family=Shadows+Into+Light&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'Josefin Sans', sans-serif;
+    
+}
+
+/*  pre defined classes----
+--------------------------------- */
+
+li{
+    list-style: none;
+    cursor: pointer;
+}
+li:hover{
+    color: #2dabf1;
+}
+a{
+    text-decoration: none;
+    color: #b5b5b5;
+}
+.para{
+    font-size: 1.5rem;
+}
+
+.d-flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+.container{
+    margin: 0 12rem;
+}
+.mybtn{
+    cursor: pointer;
+    gap: 5px;
+    display: flex;
+    padding: 14px 20px;
+    color: #ffff;
+    font-size: 16px;
+    background-color: #2dabf1;
+    box-shadow: none;
+    border: none;
+    border-radius: 10px;
+}
+.mybtn:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+#learnBtn{
+    border-radius: 50px; 
+    background: transparent; 
+    border: 1px solid white;
+}
+#learnBtn:hover{
+    background-color: #2dabf1;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+/* -----navbar----
+-------------------------- */
+nav{
+    background-image: url(./assets/background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+}
+
+.hospital__navbar{
+    color: #ffff;
+    padding-top: 2rem;
+    text-align: center;
+    align-items: center;
+}
+.hospital__navbar-navlist{
+    gap: 1.2rem;
+}
+.hospital__navbar-quoteButton button{
+    text-align: center;
+    align-items: center;
+}
+.hero-section-from form{
+    border-radius: 10px;
+    padding: 10px;
+    width: 100%;
+}
+.hero-section-button{
+    width: 40%;
+
+}
+.hospital__hero-section-right{
+    align-items: center;
+    margin: 5rem auto;
+    width: 74%;
+    /* height: 100%; */
+}
+.hospital__hero-section-left{
+    margin-top: 3rem;
+    width: 30%;
+    /* padding: 1rem 1rem; */
+    background: #ffff;
+    border-radius: 14px;
+    
+}
+.hero-section-heading{
+    width: 50%;
+}
+.hero-section-heading h1{
+    color: #ffff;
+    font-size: 2.8rem;
+}
+.hero-section-heading p{
+    color: #ffff;
+    margin: 2rem 0;
+    font-size: 1.2rem;
+}
+
+.hospital__hero-secction-left{
+    width: 20%;
+    background-color: #ffff;
+    padding: 2rem 2rem;
+    border-radius: 14px;
+    margin-top: 2rem;
+}
+.hospital__hero-secction-left label,input, select{
+    line-height: 2rem;
+    width: 100%;
+    
+    
+}
+form label input{
+    margin: 1rem 0;
+}
+select{
+    padding: 10px 0;
+}
+
+.form-mybtn{
+    width: 100%;
+    margin-top: 2rem;
+    cursor: pointer;
+    padding: 14px 20px;
+    color: #ffff;
+    font-size: 16px;
+    background-color: #2dabf1;
+    box-shadow: none;
+    border: none;
+    border-radius: 10px;
+}
+.form-mybtn:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+/*  2nd part starts--- */
+
+
+.hospital__leading-machin-second{
+    padding: 3rem 0;
+    background-color: #fafafa;
+}
+
+.hospital__leading-machine-heading{
+   
+    margin: 3rem;
+    text-align: center;
+    align-items: center;
+}
+
+.hospital__leading-card{
+    
+    margin-bottom: 5rem;
+}
+.hospital__leading-care-card{
+    width: 24%;
+    align-items: center;
+    border: 1px solid #2dacf129;
+    border-radius: 10px;
+}
+.hospital__leading-care-card span{
+    background-color: #ffff;
+    padding: 10px;
+    border-radius: 100%;
+    text-align: center;
+    font-size: 2rem;
+}
+.care__card-icon-data{
+    background-color: #2dabf1;
+    border-radius: 10px;
+}
+.hospital__leading-care-card .care-card-icon{
+    justify-content: space-evenly;
+    padding: 1rem 1.5rem;
+    margin: 0 2rem;
+    align-items: center;
+    text-align: center;
+    
+}
+.hospital__leading-care-card p{
+    line-height: 1rem;
+    margin: 10px 0;
+    font-size: 1rem;
+}
+.hospital__leading-care-card .care-card-data{
+    padding: 1rem 1.5rem;
+    background-color: #2dacf116;
+    border-radius: 10px;
+}
+
+.care-card-stars{
+    margin: 1rem 1rem;
+}
+.hospital__leading-care-card #star{
+    background: none;
+    color: #f5d016;
+    font-size: 20px;
+    gap: 1rem;
+    padding: 0;
+}
+.care-card-data-testimonial{
+    margin: 1rem 1rem;
+}
+.care-card-user{
+    margin: 0 2rem 1rem 1rem;
+}
+
+
+/*----  faq parts starts----- */
+.hospital__faq-data{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.hospital__faq-heading{
+   
+    margin: 3rem;
+    text-align: center;
+    align-items: center;
+}
+.hospital-faq-card{
+    width: 60%;
+    margin: 3rem;
+}
+.bold{
+    font-weight: bold;
+    margin: 10px 10px;
+}
+.faq-card-data-para{
+    margin: 10px 10px;
+}
+#next-arrow{
+    color: #2dabf1;
+}
+
+
+/* hospital pricing section starts */
+.hospital__pricing-details_plans{
+    display: flex;
+    margin: 4rem 18rem;
+    
+}
+.hospital__pricing-details{
+    padding: 3rem 0;
+    background-color: #fafafa;
+
+}
+
+.hospital__pricing-heading{
+    margin: 3rem;
+    text-align: center;
+    align-items: center;
+}
+.plan-free{
+    border: 1px solid #2dabf1;
+    padding: 2rem 1.5rem;
+    border-radius: 10px;
+    
+    
+}
+.plan-free-standard{
+    background-color: #252b42; 
+    border-radius: 10px;
+    padding: 2rem 1.5rem;
+    
+}
+.price{
+    color: #2dabf1;
+    font-size: 2rem;
+}
+.plan-free-heading{
+    text-align: center;
+}
+.plan-free-heading H1{
+    padding: 1rem 1rem;
+}
+.currency-time p{
+    color: #2dabf1;
+}
+.currency{
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+.plan-free-charge{
+    display: flex;
+    gap: 5px;
+   margin: 2rem 4rem;
+}
+.plan-details{
+    gap: 10px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    margin: 10px 0;
+}
+.plan-details #check-symbol{
+    color: #fafafa;
+    /* border: none; */
+    border-radius: 50%;
+    background-color: #51ca89;
+}
+.plan-details #grey-check{
+    color: #fafafa;
+    border-radius: 50%;
+    background-color: #bcbcbd;
+}
+
+
+/* getintouch__section starts--- */
+
+.getintouch__section{
+    background-color: #252b42;
+    padding: 4rem 2rem;
+    align-items: center;
+}
+
+.getintouch_input input{
+    padding: 4px 8px;
+    border: none;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+.subs-mybtn{
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+
+    background-color: #2dabf1;
+    color: #ffff;
+    width: 10rem;
+    border: none;   
+}
+.getintouch_input{
+    border-radius: 4px;
+}
+
+/* ---footer container starts--- */
+
+.hospital__footer{
+    margin: 4rem 14rem;
+}
+.footer-para p{
+    margin: 10px 0 1rem 0;
+}
+.footer-gettouch{
+    width: 20%;
+}
+.footer-gettouch h1{
+    margin-bottom: 2rem;
+}
+.footer-social-icons{
+    margin: 1rem 0;
+}
+.footer-social-icons i{
+    margin-right: 10px;
+    font-size: 1.5rem;
+    color: #2dabf1;
+}
+
+/*  credit */
+
+.hospital__credits{
+    text-align: center;
+    background-color: #fafafa;
+    padding: 1rem 0;
+}
