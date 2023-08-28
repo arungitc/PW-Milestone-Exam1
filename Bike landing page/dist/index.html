@@ -1,105 +1,445 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/dist/style.css" rel="stylesheet">
-    <title>Document</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- font awesome cdn -->
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    /> -->
+    <!-- our project just needs Font Awesome Solid + Brands -->
+  <link href="/fontawesome/css/fontawesome.css" rel="stylesheet">
+  <link href="/fontawesome/css/brands.css" rel="stylesheet">
+  <link href="/fontawesome/css/solid.css" rel="stylesheet">
+    <link rel="stylesheet" href="/dist/fontawesome.css">
+    <link href="/dist/output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/dist/style.css" />
+    <title>E-Bike</title>
+  </head>
+  <body>
+    <header
+      class="h-auto md:h-[100%] bg-cover bg-[url('./assets/BG.png')] text-[#043A53]"
+    >
+      <nav
+        class="bg-cover z-20 w-[100vw] px-8 lg:x-14 h-16 flex items-center justify-center mb-5"
+      >
+        <div class="flex items-center justify-between w-full">
+          <img src="/assets/logo.png" class="w-[3.1rem] h-[2.3rem]" alt="" />
+          <ul class="hidden md:flex gap-8 font-semibold text-[#8f9a93]">
+            <li class="li-dropdown">
+              <select name="cars" id="cars" class="uppercase">
+                <option value="volvo">Product</option>
+                <option value="saab">Saab</option>
+                <option value="opel">Opel</option>
+                <option value="audi">Audi</option>
+              </select>
+            </li>
 
-    <nav class="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
-        <div class="flex-1">
-          <a href="#" class="-m-1.5 p-1.5">
-            <span class="sr-only">Your Company</span>
-            <img class="h-8 w-auto" src="/assets/logo.png" alt="">
-          </a>
+            <li class="md:mx-2 lg:mx-2 cursor-pointer uppercase">Gallery</li>
+            <li class="md:mx-2 lg:mx-2 cursor-pointer uppercase">Contact</li>
+          </ul>
+          <div class="md:hidden text-3xl text-[#42444b]">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+          <div class="hidden md:flex">
+            <div class="md:px-2 lg:px-4 py-1 bg-white text-[#42444b] mr-2">
+              Log In
+            </div>
+            <div class="md:px-2 lg:px-4 py-1 text-white bg-[#42444b]">
+              Sign Up
+            </div>
+          </div>
         </div>
-        <div class="flex lg:hidden">
-          <button type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
-            <span class="sr-only">Open main menu</span>
-            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-            </svg>
-          </button>
-        </div>
-        <div class="hidden lg:flex lg:gap-x-12">
-          <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Product</a>
-          <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Features</a>
-          <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Marketplace</a>
-          <a href="">
-            <div class="relative inline-block text-left">
-            <button type="button" class="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50" id="menu-button" aria-expanded="true" aria-haspopup="true">
-                Options
-                <svg class="-mr-1 h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                  <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
-                </svg>
-              </button>
+      </nav>
 
-              <div class="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
-                <div class="py-1" role="none">
-                  <!-- Active: "bg-gray-100 text-gray-900", Not Active: "text-gray-700" -->
-                  <a href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-0">Account settings</a>
-                  <a href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-1">Support</a>
-                  <a href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-2">License</a>
-                  <form method="POST" action="#" role="none">
-                    <button type="submit" class="text-gray-700 block w-full px-4 py-2 text-left text-sm" role="menuitem" tabindex="-1" id="menu-item-3">Sign out</button>
-                  </form>
-                </div>
-              </div>
-            </div>
-          </a>
+      <div class="h-full w-full flex flex-wrap items-center">
+        <div
+          class="text-center self-center px-4 w-full lg:h-[230px] md:px-2 lg:px-20 md:text-left md:w-6/12 md:flex md:flex-col md:justify-between"
+        >
+          <h3 class="text-4xl text-black font-bold uppercase lg:text-7xl">
+            Let's Ride
+            <span class="block text-[#043A53]">the Future.</span>
+          </h3>
+          <div class="simple-line"></div>
+          <p class="text-[#404040]">
+            Simple and sleek design with users <br />
+            in mind.
+          </p>
 
+          <div class="flex icons gap-16">
+            <div class="flex items-center">
+              <i class="fa-solid fa-arrow-right"></i>
+              <p class="font-bold">Buy now</p>
+            </div>
+            <div class="flex items-center gap-10">
+              <p class="text-sm font-semibold">
+                Watch our <br />
+                video how<br />it works
+              </p>
+              <img
+                src="/assets/header play button.png"
+                alt=""
+                class="h-[3.5rem] w-[3.5rem]"
+              />
+            </div>
+          </div>
         </div>
-        <div class="loginButton flex justify-between gap-4">
-            <div class="lg:flex ">
-                <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Log in
+        <div class="w-full md:w-6/12 h-full">
+          <img
+            class="md:inline-block md:bg-transparent md:object-contain md:w-full md:h-full"
+            style="mix-blend-mode: multiply"
+            src="/assets/header-image.png"
+            alt="man"
+          />
+          <div class="flex number-img ml-[30rem] items-center">
+            <img src="/assets/01.png" alt="" />
+            <div class="flex left-right-arrows">
+              <i class="fa-solid fa-angle-left" id="arrow-left"></i>
+              <i class="fa-solid fa-angle-right" id="arrow-right"></i>
             </div>
-            <div class="lg:flex>
-                <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Sign Up
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="button-flex flex justify-between px-16 mb-4">
+      <div class="first-button">
+        <h2 class="font-extrabold text-2xl text-center text-[#404040]">
+          105 lbs
+        </h2>
+        <p class="font-semibold mt-2 text-center text-[#404040] text-xs">
+          Net Weight
+        </p>
+      </div>
+      <div class="first-button">
+        <h2 class="font-extrabold text-2xl text-center text-[#404040]">
+          26 Mph
+        </h2>
+        <p class="font-semibold mt-2 text-center text-[#404040] text-xs">
+          Top Speed
+        </p>
+      </div>
+      <div class="first-button">
+        <h2 class="font-extrabold text-2xl text-center text-[#404040]">
+          38 Miles
+        </h2>
+        <p class="font-semibold mt-2 text-center text-[#404040] text-xs">
+          Max Range
+        </p>
+      </div>
+      <div class="first-button">
+        <h2 class="font-extrabold text-2xl text-center text-[#404040]">
+          89 nm
+        </h2>
+        <p class="font-semibold mt-2 text-center text-[#404040] text-xs">
+          Max Torque
+        </p>
+      </div>
+      <div class="first-button">
+        <h2 class="font-extrabold text-2xl text-center text-[#404040]">
+          22% Slop
+        </h2>
+        <p class="font-semibold mt-2 text-center text-[#404040] text-xs">
+          Hill Climbing
+        </p>
+      </div>
+      <div class="first-button">
+        <h2 class="font-extrabold text-2xl text-center text-[#404040]">2 x</h2>
+        <p class="font-semibold mt-2 text-center text-[#404040] text-xs">
+          Hydraulic Disc Brakes
+        </p>
+      </div>
+    </div>
+
+<div>
+
+<!-- product information section -->
+
+<div class="h-full w-full mt-16">
+    <div class="text-center">
+        <h1 class="lg:text-4xl md:text-2xl text-3xl font-bold text-[#404040]">Product Information</h1>
+        <p class="mt-9 text-center text-[#404040] text-[1rem] font-semibold">
+            Our scooter has the following unique design and technology features:
+        </p>
+    </div>
+
+    <div class="flex justify-around">
+        <div class="unique-bike-img">
+            <img src="/assets/product information image.png" alt="">
+        </div>
+        <div class="product-information">
+            <div class="information-first flex items-center mt-16 md:text-right">
+                <img src="/assets/Icon.png" alt="">
+                <h3 class="font-semibold md:text-left text-[#404040]">Lightwieght aircraft grade aluminium frame</h3>
             </div>
+            <div class="information-first flex items-center my-8 md:text-right">
+                <img src="/assets/Icon.png" alt="">
+                <h3 class="font-semibold md:text-left text-[#404040]">Car grade lithium battery</h3>
+            </div>
+            <div class="information-first flex items-center my-8 md:text-right">
+                <img src="/assets/Icon.png" alt="">
+                <h3 class="font-semibold md:text-left text-[#404040]">Self balanced</h3>
+            </div>
+            <div class="information-first flex items-center my-8 md:text-right">
+                <img src="/assets/Icon.png" alt="">
+                <h3 class="font-semibold md:text-left text-[#404040]">Plug n play</h3>
+            </div>
+            <div class="information-first flex items-center my-8 md:text-right">
+                <img src="/assets/Icon.png" alt="">
+                <h3 class="font-semibold md:text-left text-[#404040]">Quick release adapter</h3>
+            </div>
+            <div class="information-first flex items-center my-8 md:text-right">
+                <img src="/assets/Icon.png" alt="">
+                <h3 class="font-semibold md:text-left text-[#404040]">RFID Key card</h3>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- motor information section -->
+
+<div class="h-full w-full mt-16">
+    <div class="text-center">
+        <img src="/assets/high efficiency motor.png" alt="">
+        <!-- <h1 class="lg:text-4xl md:text-2xl text-3xl font-bold text-[#404040]">High Efficiency Motor</h1>
+        <p class="mt-9 text-center text-[#404040] text-[1rem] font-semibold">
+            More torque for powerfull riding with 22% maximum hill climbing capability
+        </p> -->
+
+        
+    </div>
+</div>
+
+
+<!-- multiple accessories section -->
+
+
+<div class="h-full w-full mt-16">
+    <div class="text-center">
+        <h1 class="lg:text-4xl md:text-2xl text-3xl font-bold text-[#404040]">Multiple Accessories</h1>
+        <p class="mt-9 text-center text-[#404040] text-[1rem] font-semibold">
+            There are multiple modes for the scooter for your multiple needs.
+        </p>
+    </div>
+
+    <div class="flex justify-around">
+
+        <div class="product-information">
+            <h2 class="lg:text-4xl md:text-2xl text-3xl font-bold my-9 text-[#404040]">Gold bag Rock</h2>
+            <div class="information-first flex items-center md:text-right">
+                <img src="/assets/Icon.png" alt="">
+                <h3 class="font-semibold md:text-left text-[#404040]">Material: Aluminium alloy</h3>
+            </div>
+            <div class="information-first flex items-center my-8 md:text-right">
+                <img src="/assets/Icon.png" alt="">
+                <h3 class="font-semibold md:text-left text-[#404040]">Color: Black</h3>
+            </div>
+            <div class="information-first flex items-center my-8 md:text-right">
+                <img src="/assets/Icon.png" alt="">
+                <h3 class="font-semibold md:text-left text-[#404040]">Capacity: 45lbs</h3>
+            </div>
+            <div class="information-first flex items-center my-8 md:text-right">
+                <img src="/assets/Icon.png" alt="">
+                <h3 class="font-semibold md:text-left text-[#404040]">Steady & Adjustable</h3>
+            </div>
+            
+        </div>
+
+        <div class="unique-bike-img">
+            <img src="/assets/golf bag rock.png" alt="">
+        </div>
+        
+    </div>
+</div>
+
+<!-- shopping rack section -->
+
+<div class="h-full w-full mt-16">
+    <div class="text-center">
+        <h1 class="lg:text-4xl md:text-2xl text-3xl font-bold text-[#404040]">Multiple Accessories</h1>
+        <p class="mt-9 text-center text-[#404040] text-[1rem] font-semibold">
+            There are multiple modes for the scooter for your multiple needs.
+        </p>
+    </div>
+
+    <div class="flex justify-between">
+
+        <div class="unique-bike-img">
+            <img src="/assets/shopping rack.png" alt="">
+        </div>
+
+        <div class="product-information mr-[10rem]">
+            <h2 class="lg:text-4xl md:text-2xl text-3xl font-bold my-9 text-[#404040]">Shopping Rack</h2>
+            <div class="information-first flex items-center md:text-right">
+                <img src="/assets/Icon.png" alt="">
+                <h3 class="font-semibold md:text-left text-[#404040]">Material: Aluminium alloy</h3>
+            </div>
+            <div class="information-first flex items-center my-8 md:text-right">
+                <img src="/assets/Icon.png" alt="">
+                <h3 class="font-semibold md:text-left text-[#404040]">Color: Black</h3>
+            </div>
+            <div class="information-first flex items-center my-8 md:text-right">
+                <img src="/assets/Icon.png" alt="">
+                <h3 class="font-semibold md:text-left text-[#404040]">Capacity: 45lbs</h3>
+            </div>
+            <div class="information-first flex items-center my-8 md:text-right">
+                <img src="/assets/Icon.png" alt="">
+                <h3 class="font-semibold md:text-left text-[#404040]">Ease & Adjustable</h3>
+            </div>
+            
         </div>
        
-      </nav>
-      <!-- Mobile menu, show/hide based on menu open state. -->
-      <div class="lg:hidden" role="dialog" aria-modal="true">
-        <!-- Background backdrop, show/hide based on slide-over state. -->
-        <div class="fixed inset-0 z-50"></div>
-        <div class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
-          <div class="flex items-center justify-between">
-            <a href="#" class="-m-1.5 p-1.5">
-              <span class="sr-only">Your Company</span>
-              <img class="h-8 w-auto" src="/assets/logo.png" alt="">
-            </a>
-            <button type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700">
-              <span class="sr-only">Close menu</span>
-              <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-              </svg>
-            </button>
-          </div>
-          <div class="mt-6 flow-root">
-            <div class="-my-6 divide-y divide-gray-500/10">
-              <div class="space-y-2 py-6">
-                
-                <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Features</a>
-                <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Marketplace</a>
-                <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Company</a>
-              </div>
-              <div class="py-6">
-                <a href="#" class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Log in</a>
-              </div>
-              
-            </div>
-          </div>
+    </div>
+    <!-- more coming soon section -->
+    <div class="comingSoon-btn items-center flex flex-col">
+        <button class="py-4 px-9 border-[#404040] border-2 rounded-lg text-center font-bold text-2xl">More accessories Coming soon</button>
+    </div>
+    
+</div>
 
 
+<!-- gallery section -->
+
+<div class="mt-[5rem] gallery-section h-full w-full">
+  <div class="gallery-heading">
+    <h1 class="lg:text-4xl md:text-2xl text-3xl font-bold text-[#404040] text-center">Gallery</h1>
+    <p class="mt-4 text-center text-[#404040] text-[1rem] font-semibold">View gallery of our products and make yourself with our creation</p>
+  </div>
 
 
-
-
-
-   
+  <div class="flex justify-around">
+    <div>
+      <img src="/assets/gallery scooter.png" alt="" class="mt-[12rem] h-[23rem ] w-[27rem]">
+      <h3></h3>
+      <div class="flex flex-col mt-4">
+        <button class="py-2 px-[4.5rem] mx-4  border-[#404040] border-2 rounded-lg text-center font-bold text-2xl">Battery Images</button>
+        <button class="py-2 px-[4.5rem] mx-4 mt-4 border-[#404040] border-2 rounded-lg text-center font-bold text-2xl">Spare parts Images</button>
+        <button class="py-2 px-[4.5rem] mx-4 mt-4 border-[#404040] border-2 rounded-lg text-center font-bold text-2xl">Charging cable Images</button>
+      </div>
       
-</body>
+      
+      
+      
+    </div>
+    <div>
+      <img src="/assets/gallery built quality.png" alt="" class="mt-[7rem] h-[23rem ] w-[27rem]">
+      <img src="/assets/gallery parts.png" alt="" class="mt-[3rem] h-[23rem ] w-[27rem]">
+    </div>
+  </div>
+</div>
+
+<!-- color section starts -->
+
+<div class="color-section">
+  <div class="color-section-heading">
+    <h3 class="lg:text-4xl md:text-2xl text-3xl font-bold text-[#404040] text-center">Color</h3>
+    <p class="mt-4 text-center text-[#404040] text-[1rem] font-semibold">Checkout our Prodcuts color</p>
+  </div>
+
+
+  <div class="coolor-section-image">
+    <img src="/assets/gallery scooter.png" alt="" class="w-[100vw] h-[50rem] text-lg p">
+
+
+    <div class="color-section-colors flex justify-center z-10">
+      <img src="/assets/color-scooter-1.png" alt="" class="">
+      <img src="/assets/color-scooter-2.png" alt="" class="">
+      <img src="/assets/color-scooter-3.png" alt="" class="">
+      <img src="/assets/color-scooter-4.png" alt="" class="">
+    </div>
+
+
+  </div>
+
+ 
+</div>
+
+
+<!-- testimonial section -->
+
+<div class="testimonial">
+  <div class="testimonial-heading">
+    <h1 class="lg:text-4xl md:text-2xl text-3xl font-bold text-[#404040] text-center capitalize">Testimonial</h1>
+  </div>
+
+  <div class="testimonial-data flex justify-around my-9">
+    <div class="testimonial-card">
+      <div class="star-icon text-center p-5">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+
+        <p class="p-5">On the other hand, we denounce with righteous indignation and dislike men who are so
+          beguilded demoralise by the charms of pleasure.
+        </p>
+        <div class="monial-person flex justify-between mx-14">
+          <img src="/assets/serhiy hipskyy.png" alt="">
+          <div>
+            <h4>Serhiy Hipskyy</h4>
+            <h6>CEO Personal</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="testimonial-card">
+      <div class="star-icon text-center p-5">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+
+        <p class="p-5">On the other hand, we denounce with righteous indignation and dislike men who are so
+          beguilded demoralise by the charms of pleasure.
+        </p>
+        <div class="monial-person flex justify-between mx-14">
+          <img src="/assets/Justus Menke.png" alt="">
+          <div>
+            <h4>Justus Menke</h4>
+            <h6>CEO Eronaman</h6>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+    <div class="testimonial-card">
+      <div class="star-icon text-center p-5">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+
+        <p class="p-5">On the other hand, we denounce with righteous indignation and dislike men who are so
+          beguilded demoralise by the charms of pleasure.
+        </p>
+        <div class="monial-person flex justify-between mx-14">
+          <img src="/assets/Britain Eriksen.png" alt="">
+          <div>
+            <h4>Britain Eriksen</h4>
+            <h6>CEO Universal</h6>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+</div>
+
+
+
+
+  </body>
 </html>
