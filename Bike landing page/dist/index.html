@@ -314,7 +314,7 @@
   <div class="flex justify-around">
     <div>
       <img src="/assets/gallery scooter.png" alt="" class="mt-[12rem] h-[23rem ] w-[27rem]">
-      <h3></h3>
+      
       <div class="flex flex-col mt-4">
         <button class="py-2 px-[4.5rem] mx-4  border-[#404040] border-2 rounded-lg text-center font-bold text-2xl">Battery Images</button>
         <button class="py-2 px-[4.5rem] mx-4 mt-4 border-[#404040] border-2 rounded-lg text-center font-bold text-2xl">Spare parts Images</button>
@@ -341,33 +341,41 @@
   </div>
 
 
-  <div class="coolor-section-image">
-    <img src="/assets/gallery scooter.png" alt="" class="w-[100vw] h-[50rem] text-lg p">
+  <div class="coolor-section-image relative">
+    <img src="/assets/gallery scooter.png" alt="" class="w-[100vw] h-[50rem] text-lg relative">
 
 
-    <div class="color-section-colors flex justify-center z-10">
-      <img src="/assets/color-scooter-1.png" alt="" class="">
-      <img src="/assets/color-scooter-2.png" alt="" class="">
-      <img src="/assets/color-scooter-3.png" alt="" class="">
-      <img src="/assets/color-scooter-4.png" alt="" class="">
+    <div class="color-section-colors items-center">
+      <div>
+        <img src="/assets/color-scooter-1.png" alt="" class="absolute top-[77%]" id="scooter-1">
+        <!-- <img src="/assets/01.png" alt="" class="absolute left-[17%] top-[100%] w-28 h-28"> -->
+        <p class="absolute scooter-number1 top-[100%] font-extrabold text-[5.125rem] text-[#fff] opacity-30">01</p>
+      </div>
+      
+      <img src="/assets/color-scooter-2.png" alt="" class="absolute top-[77%]" id="scooter-2">
+      <p class="absolute scooter-number2 top-[100%] font-extrabold  text-[5.125rem] text-[#fff] opacity-30">02</p>
+      <img src="/assets/color-scooter-3.png" alt="" class="absolute top-[77%]" id="scooter-3">
+      <p class="absolute scooter-number3 top-[100%] font-extrabold  text-[5.125rem] text-[#fff] opacity-30">03</p>
+      <img src="/assets/color-scooter-4.png" alt="" class="absolute top-[77%]" id="scooter-4">
+      <p class="absolute scooter-number4 top-[100%] font-extrabold text-[5.125rem] text-[#fff] opacity-30">04</p>
     </div>
 
 
   </div>
-
  
 </div>
 
 
 <!-- testimonial section -->
 
-<div class="testimonial">
+<div class="testimonial mt-[10rem] bg-[#dedcdc] p-12">
   <div class="testimonial-heading">
     <h1 class="lg:text-4xl md:text-2xl text-3xl font-bold text-[#404040] text-center capitalize">Testimonial</h1>
   </div>
 
-  <div class="testimonial-data flex justify-around my-9">
-    <div class="testimonial-card">
+  <div class="testimonial-data flex justify-around my-9 mx-[8.25rem]">
+
+    <div class="testimonial-card border border-cyan-100">
       <div class="star-icon text-center p-5">
         <i class="fa-solid fa-star"></i>
         <i class="fa-solid fa-star"></i>
@@ -389,7 +397,7 @@
     </div>
 
 
-    <div class="testimonial-card">
+    <div class="testimonial-card border border-cyan-100">
       <div class="star-icon text-center p-5">
         <i class="fa-solid fa-star"></i>
         <i class="fa-solid fa-star"></i>
@@ -412,7 +420,7 @@
     </div>
 
 
-    <div class="testimonial-card">
+    <div class="testimonial-card border border-cyan-100">
       <div class="star-icon text-center p-5">
         <i class="fa-solid fa-star"></i>
         <i class="fa-solid fa-star"></i>
@@ -433,10 +441,83 @@
       </div>
 
     </div>
+
+   
+  </div>
+  <div class="arrow-icons text-center rounded-full">
+    <i class="fa-solid fa-arrow-left-long border border-[#404040] rounded-full p-3 hover:bg-[#404040]"></i>
+    <i class="fa-solid fa-arrow-right-long border border-[#404040] rounded-full p-3 hover:bg-[#404040]"></i>
   </div>
 
 
 </div>
+
+
+<!-- subscribing section -->
+
+<div class="subscribe-btn p-20">
+  <h1 class="lg:text-4xl md:text-2xl text-3xl font-bold text-[#404040] text-center capitalize">Subscribe to our Newsletter</h1>
+  <p class="mt-4 text-center text-[#404040] text-[1rem] font-semibold">Subscribe to our Newsletter to get exciting offers in future.</p>
+
+  <div class="emailPart text-center my-9">
+    <input type="email" name="" id="" class="border border-y-cyan-300 border-x-cyan-300 p-5 rounded-[14px] text-xl" placeholder="Enter your email">
+    <button class="button p-6 rounded-[14px] bg-[#404040] text-cyan-50">
+      Get Start
+    </button>
+  </div>
+
+  
+
+</div>
+
+<!-- footer section -->
+  <div class="flex justify-between bg-[#404040]">
+    <div class="">
+      <img src="/assets/footer-scooter.png" alt="">
+    </div>
+    <div class="flex justify-between p-[10rem] gap-[5rem] text-cyan-50 text-2xl leading-10">
+      <div class="">
+        <h2 class="text-3xl font-semibold pb-5">About</h2>
+        <p>Company</p>
+        <p>Team</p>
+        <p>Profile</p>
+        <p>Career</p>
+      </div>
+      <div>
+        <h2 class="text-3xl font-semibold pb-5">Resources</h2>
+        <p>Contact</p>
+        <p>Application</p>
+        <p>FAQ Features</p>
+        
+      </div>
+      <div>
+        <h2 class="text-3xl font-semibold pb-5">Legal</h2>
+        <p>Copyright Privacy</p>
+        <p>Policy Disclaimer</p>
+        <p>Terms</p>
+        <div>
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-instagram"></i>
+        </div>
+        
+      </div>
+  
+      
+    </div>
+
+    
+
+</div>
+
+
+  
+
+
+<div class="bg-[#404040] text-center text-cyan-50 text-lg pb-4">
+  <p>	&#169; Copyright 2023. All rights reserved</p>
+</div>
+
 
 
 

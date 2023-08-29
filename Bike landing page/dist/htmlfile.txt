@@ -1,0 +1,74 @@
+<header class="h-auto md:h-[100%] bg-cover bg-[url('./assets/BG.png')] text-[#043A53]">
+    <nav class="bg-cover fixed top-0 z-20 w-[100vw] px-8 lg:x-14 h-16 flex items-center justify-center mb-5">
+    <div class="flex items-center justify-between w-full">
+        <img src="/assets/logo.png" class="w-[3.1rem] h-[2.3rem]" alt="">
+        <ul class="hidden md:flex gap-8 font-semibold text-[#8f9a93]">
+            <li class="li-dropdown">
+                <select name="cars" id="cars" class="uppercase">
+                    <option value="volvo">Product</option>
+                    <option value="saab">Saab</option>
+                    <option value="opel">Opel</option>
+                    <option value="audi">Audi</option>
+                </select>
+            </li>
+           
+            
+            <li class="md:mx-2 lg:mx-2 cursor-pointer uppercase">Gallery</li>
+            <li class="md:mx-2 lg:mx-2 cursor-pointer uppercase">Contact</li>
+            
+        </ul>
+        <div class="md:hidden text-3xl text-[#42444b]">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="hidden md:flex">
+            <div class="md:px-2 lg:px-4 py-1 bg-white text-[#42444b] mr-2">
+                Log In
+            </div>
+            <div class="md:px-2 lg:px-4 py-1 text-white bg-[#42444b]">
+                Sign Up
+            </div>
+        </div>
+        
+    </div>
+
+   
+    
+</nav>
+    <div class="h-full w-full pt-16 flex flex-wrap">
+        <div
+            class="text-center self-center px-4 w-full lg:h-[230px] md:px-2 lg:px-20 md:text-left md:w-6/12 md:flex md:flex-col md:justify-between">
+            <h3 class="text-3xl md:text-4xl text-black font-bold">
+                Find High-Potential Customers with
+                <span class="block text-[#043A53]"> Trustco.</span>
+            </h3>
+            <p class="text-[#404040] mt-3 md:mt-0">
+                We provide sales teams and professionals with the knowledge, skill
+                and discipline they need to be 10x more successful.
+            </p>
+            <div class="mx-auto md:m-0 mt-4 bg-[#043A53] w-fit text-white px-3 py-2 rounded-3xl">
+                Explore Our Works
+                <span class="bg-[#042E41] px-2 ml-2 rounded-full py-1"><i
+                        class="fa-solid fa-arrow-right"></i></span>
+            </div>
+        </div>
+        <div class="w-full md:w-6/12 h-full relative">
+            <img class="md:hidden bg-transparent w-full h-full" style="mix-blend-mode: multiply"
+                src="./assets/Man mobile.png" alt="man" />
+            <img class="hidden md:inline-block md:bg-transparent md:object-contain md:w-full md:h-full"
+                style="mix-blend-mode: multiply" src="./assets/Man mobile.png" alt="man" />
+            <div
+                class="w-24 h-24 md:h-32 md:w-32 absolute flex flex-col justify-center items-center bottom-32 md:bottom-48 lg:bottom-64 right-8 md:right-16 lg:right-24 rounded-full bg-[#043a53] text-white">
+                <div
+                    class="flex items-center justify-center w-5 h-5 md:w-8 md:h-8 rounded-full bg-opacity-10 bg-[#F2F5F6]">
+                    <i class="fa-sharp fa-solid fa-arrow-up"></i>
+                </div>
+                <p class="text-2xl md:text-4xl">98%</p>
+                <p>Sales Up</p>
+            </div>
+
+            <div class="absolute bottom-4 left-12 lg:left-20">
+                <img class="w-28 h-28 md:w-36 md:h-36 rounded-full object-cover" src="./assets/Images.png" alt="" />
+            </div>
+        </div>
+    </div>
+   </header>

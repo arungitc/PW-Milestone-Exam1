@@ -60,5 +60,45 @@ nav{
 .testimonial-card{
     width: 20rem;
     height: 20rem;
+    
+}
+.testimonial-card:hover{
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    transition: all .5ms ease-in;
+    background-color: #f1eff6;
+}
+
+.color-section-colors #scooter-1{
+    
+    left: 6%;
+}
+.color-section-colors #scooter-2{
+    
+    left: 25%;
+}
+.color-section-colors #scooter-3{
+    
+    left: 45.4%;
+}
+.color-section-colors #scooter-4{
+    
+    left: 66%;
+}
+
+.scooter-number1{
+    
+    left: 20%;
+}
+.scooter-number2{
+    left: 40%;
+}
+.scooter-number3{
+    left: 60%;
+}
+.scooter-number4{
+    left: 80%;
+}
+
+.arrow-icons i:hover{
+    color: #ffff;
 }
