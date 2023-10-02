@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200&display=swap');
+
+html{
+    
+   font-family: 'Fira Sans', sans-serif;
+   background-color: #f7f7f7;
+   overflow-x: hidden;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+i{
+    cursor: pointer;
+}
+.navlinks:hover{
+    font-weight: 900;
+}
+
+.hero-img{
+    margin-left: 3rem;
+    height: 29rem;
+    width: 30rem;
+
+}
+.group-img{
+    width: 35rem;
+    height: 18rem;
+    /* rotate: 20deg; */
+}
+.play-btn{
+    font-size: 1.5rem;
+}
+.play-btn::before{
+    
+    border-radius: 10px;
+}
+
+
+.rating-clients{
+    width: 16rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 10px 15px;
+    margin-right: 5rem;
+    border-radius: 14px;
+}
+
+.card-a{
+    border-radius: 14px;
+    margin-top: 3rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    padding: 1rem 2rem;
+}
+.vision-card{
+    margin: 0 10rem;
+    
+}
+.card-img{
+    margin: 1.5rem 0;
+    /* height: 3rem; */
+    width: 3rem;
+}
+
+
+.video-part{
+    margin: 5rem 9rem;
+
+}
+.video-part-flex{
+    gap: 4rem;
+    
+}
+.video-part-video img{
+    width: 38rem;
+    height: 20rem;
+}
+
+.explore-btn{
+    border: 1px solid #9DADE3;
+}
+
+.testimonial-part{
+    margin: 6rem 0;
+}
+
+.testimonial-data-flex{
+    margin: 3rem 20rem;
+    gap: 2rem;
+}
+
+.first-card{
+    border: 2px solid #9DADE3;
+    padding: 1rem 4rem;
+    width: 16rem;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.ourTeam-card{
+    align-items: center;
+    margin-left: 47%;
+    transform: translate(-50%, -50%);
+    margin-top: 14rem;
+    gap: 5rem;
+}
+.card-social{
+    display: flex;
+    /* justify-content: space-around; */
+    /* padding: 1rem 0; */
+    border-bottom: 2px solid #9DADE3;
+    border-left: 2px solid #9DADE3;
+    border-right: 2px solid #9DADE3;
+    text-align: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    
+}
+
+.twitter-icon{
+    padding: 1rem 2rem;
+    
+    border-right: 2px solid #9DADE3;
+}
+.facebook-icon{
+    padding: 1rem 2rem;
+    
+    border-right: 2px solid #9DADE3;
+}
+.ball-icon{
+    padding: 1rem 2rem;  
+    
+}
+.subscribe-input{
+    margin: 2rem 0;
+}
+.subscribe-input input{
+    width: 90%;
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    font-weight: bolder;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+input::placeholder {
+    color: black;
+    opacity: 1; /* Firefox */
+  }
+
